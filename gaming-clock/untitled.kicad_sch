@@ -5,6 +5,57 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "LED:SK6812MINI" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 5.08 5.715 0)
         (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -215,6 +266,9 @@
   (junction (at 163.83 87.63) (diameter 0) (color 0 0 0 0)
     (uuid 05fb4cc3-2f0d-48ab-a79a-739ffbfddd72)
   )
+  (junction (at 146.05 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid 0ca0df22-e632-4e66-98f6-3b08dede4fa3)
+  )
   (junction (at 154.94 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 16e99b43-5528-4206-b9b0-68bdf7b5a1a6)
   )
@@ -230,8 +284,14 @@
   (junction (at 130.81 87.63) (diameter 0) (color 0 0 0 0)
     (uuid 27866971-8658-4611-944f-a8f69bd5d235)
   )
+  (junction (at 163.83 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 2a0683ef-3392-4bf7-88c3-27bbe5c75af7)
+  )
   (junction (at 162.56 80.01) (diameter 0) (color 0 0 0 0)
     (uuid 2b210afe-95b4-4d7c-bb06-2d1bfe65aad0)
+  )
+  (junction (at 163.83 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 3090ef0a-d074-4cdf-8a0d-c714b057e27f)
   )
   (junction (at 177.8 110.49) (diameter 0) (color 0 0 0 0)
     (uuid 386efb69-6505-4674-a35d-0e56e7063c82)
@@ -275,17 +335,26 @@
   (junction (at 129.54 62.23) (diameter 0) (color 0 0 0 0)
     (uuid b1639e66-0e36-419a-af37-451c7ad535a3)
   )
+  (junction (at 170.18 72.39) (diameter 0) (color 0 0 0 0)
+    (uuid b996b2b2-73a1-4a1f-95be-bdc8453346a8)
+  )
   (junction (at 130.81 69.85) (diameter 0) (color 0 0 0 0)
     (uuid bcd54627-636e-465d-92c6-e53d4fa1ee4e)
   )
   (junction (at 154.94 87.63) (diameter 0) (color 0 0 0 0)
     (uuid c028ffc6-b35d-4ce3-88c6-ad478fd0e52f)
   )
+  (junction (at 121.92 120.65) (diameter 0) (color 0 0 0 0)
+    (uuid c4bc43c9-64d3-496b-b583-e297b567987a)
+  )
   (junction (at 162.56 53.34) (diameter 0) (color 0 0 0 0)
     (uuid c8c20854-fca6-4490-a629-7cf4636acd0e)
   )
   (junction (at 163.83 72.39) (diameter 0) (color 0 0 0 0)
     (uuid cfd3367d-920d-4aab-91fd-7c41ae142d7f)
+  )
+  (junction (at 121.92 72.39) (diameter 0) (color 0 0 0 0)
+    (uuid d10e271a-99ba-4d1e-a498-2fc3b3b013c2)
   )
   (junction (at 163.83 102.87) (diameter 0) (color 0 0 0 0)
     (uuid d1d1b505-b00f-4ec9-bcbe-78cac4b7270a)
@@ -295,6 +364,9 @@
   )
   (junction (at 154.94 135.89) (diameter 0) (color 0 0 0 0)
     (uuid f6f8ef54-2088-4300-8094-e37430d59f6c)
+  )
+  (junction (at 170.18 120.65) (diameter 0) (color 0 0 0 0)
+    (uuid f8067815-c0d6-4fbc-af51-af46a1cb05a7)
   )
   (junction (at 161.29 118.11) (diameter 0) (color 0 0 0 0)
     (uuid fae2554f-1c54-4dca-8162-6c73e2195828)
@@ -383,9 +455,17 @@
     (stroke (width 0) (type default))
     (uuid 4bfeb828-e43c-4caf-9a6d-d078aed2ac82)
   )
+  (wire (pts (xy 111.76 72.39) (xy 121.92 72.39))
+    (stroke (width 0) (type default))
+    (uuid 4d72fe93-c053-44e7-add0-e29ebee76a04)
+  )
   (wire (pts (xy 130.81 87.63) (xy 130.81 118.11))
     (stroke (width 0) (type default))
     (uuid 4df3da83-115f-4d7d-9659-7307c166b8cc)
+  )
+  (wire (pts (xy 170.18 120.65) (xy 180.34 120.65))
+    (stroke (width 0) (type default))
+    (uuid 52851349-eff6-4cc9-aecf-ba96bfa1086d)
   )
   (wire (pts (xy 170.18 54.61) (xy 163.83 54.61))
     (stroke (width 0) (type default))
@@ -463,6 +543,14 @@
     (stroke (width 0) (type default))
     (uuid 8b06159a-6279-4266-a2f7-c2d28f4d9afe)
   )
+  (wire (pts (xy 170.18 72.39) (xy 181.61 72.39))
+    (stroke (width 0) (type default))
+    (uuid 8b0836f7-eaa9-40a5-b750-e04f251adbc9)
+  )
+  (wire (pts (xy 146.05 87.63) (xy 146.05 104.14))
+    (stroke (width 0) (type default))
+    (uuid 8d3208f8-7d65-43f9-b718-428907f1bfaf)
+  )
   (wire (pts (xy 121.92 87.63) (xy 130.81 87.63))
     (stroke (width 0) (type default))
     (uuid 8d9c870f-0b2b-436b-bb18-baed9ca06f11)
@@ -511,6 +599,10 @@
     (stroke (width 0) (type default))
     (uuid a88b7478-8477-4231-a352-f405858c97de)
   )
+  (wire (pts (xy 146.05 87.63) (xy 154.94 87.63))
+    (stroke (width 0) (type default))
+    (uuid a9cfde85-b88b-4274-ae4f-437b1f54d516)
+  )
   (wire (pts (xy 161.29 69.85) (xy 170.18 69.85))
     (stroke (width 0) (type default))
     (uuid a9f76e94-ebca-426c-84d6-fbb08591d1c1)
@@ -519,6 +611,10 @@
     (stroke (width 0) (type default))
     (uuid ad9e7b7a-dab4-4cf0-a2c4-86d69db6b984)
   )
+  (wire (pts (xy 110.49 120.65) (xy 121.92 120.65))
+    (stroke (width 0) (type default))
+    (uuid b04f7cc7-7046-47ca-9ab8-0aa77d6872b3)
+  )
   (wire (pts (xy 147.32 101.6) (xy 147.32 95.25))
     (stroke (width 0) (type default))
     (uuid b183da42-3d71-417a-9ccb-490c70c34595)
@@ -526,6 +622,10 @@
   (wire (pts (xy 163.83 87.63) (xy 163.83 72.39))
     (stroke (width 0) (type default))
     (uuid b9b0dd08-f027-47dd-8504-2d404c773551)
+  )
+  (wire (pts (xy 163.83 39.37) (xy 168.91 39.37))
+    (stroke (width 0) (type default))
+    (uuid ba1c7bc4-3e3b-4464-9eea-c7db8f3abc27)
   )
   (wire (pts (xy 130.81 69.85) (xy 130.81 87.63))
     (stroke (width 0) (type default))
@@ -543,13 +643,17 @@
     (stroke (width 0) (type default))
     (uuid c775f43f-b441-466c-b1c2-80df5129b886)
   )
-  (wire (pts (xy 137.16 87.63) (xy 154.94 87.63))
+  (wire (pts (xy 137.16 87.63) (xy 146.05 87.63))
     (stroke (width 0) (type default))
     (uuid c9c5ca59-4872-41fd-ab47-4437fb138bf1)
   )
   (wire (pts (xy 170.18 120.65) (xy 163.83 120.65))
     (stroke (width 0) (type default))
     (uuid cfef0a60-0531-4253-be8c-8c5be6de9af7)
+  )
+  (wire (pts (xy 163.83 135.89) (xy 163.83 144.78))
+    (stroke (width 0) (type default))
+    (uuid d0649e8e-a4ca-43bd-bc6d-5548ca478993)
   )
   (wire (pts (xy 177.8 62.23) (xy 177.8 53.34))
     (stroke (width 0) (type default))
@@ -593,6 +697,108 @@
     (uuid eaefacf7-1bd8-4927-93ba-21554b0fe639)
   )
 
+  (symbol (lib_id "power:GND") (at 180.34 128.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 080f84c5-a842-42a3-b4a4-7b7a19ef7a82)
+    (property "Reference" "#PWR013" (at 180.34 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 180.34 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 180.34 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 180.34 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 52bc1b4b-ae51-4eab-8e3e-4d8de166af29))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR013") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR025") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR034") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR043") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 168.91 46.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0f30df2f-7c25-4627-b82a-18700cc2ac87)
+    (property "Reference" "#PWR09" (at 168.91 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 168.91 52.07 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 168.91 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 168.91 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid befe0327-83ac-4a6d-abc8-c4b27274f349))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR09") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR024") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR033") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR042") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 111.76 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 10290af7-d3b6-4c76-a9af-2d41938ab7f0)
+    (property "Reference" "#PWR016" (at 111.76 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 111.76 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 111.76 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 111.76 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 02f3fa90-93d0-4b19-abe1-be7307f561eb))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR016") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR019") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR028") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 154.94 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15a90d59-f810-4fd9-b642-9ca0963743cd)
@@ -617,8 +823,48 @@
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
           (reference "#PWR012") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "#PWR010") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR022") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR031") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR040") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 163.83 152.4 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 19e6b805-8d4b-4cf2-b510-2b492b2b5ec8)
+    (property "Reference" "#PWR014" (at 163.83 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 163.83 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 163.83 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 163.83 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d99d9f1c-783d-499b-aa03-c89a498a2b5a))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR014") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR023") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR032") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -648,8 +894,14 @@
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
           (reference "#PWR011") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "#PWR09") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR020") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR029") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -680,10 +932,54 @@
           (reference "D3") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D23") (unit 1)
+          (reference "D102") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D9") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D8") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D22") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D36") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 180.34 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 45c27065-3fc5-4730-a434-032ea209e40b)
+    (property "Reference" "C4" (at 181.61 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 181.61 121.92 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 181.3052 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 180.34 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5385248d-45d0-410b-8c6d-22792355579c))
+    (pin "2" (uuid 30245edb-941b-429b-af74-cc4c43b03b9f))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C103") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C12") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C19") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -714,10 +1010,16 @@
           (reference "D2") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D20") (unit 1)
+          (reference "D101") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D6") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D5") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D19") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D33") (unit 1)
         )
       )
     )
@@ -748,10 +1050,54 @@
           (reference "D14") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D25") (unit 1)
+          (reference "D107") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D11") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D10") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D24") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 111.76 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 55920dbd-28b8-4c25-a1bf-8b6222858694)
+    (property "Reference" "C4" (at 113.03 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 113.03 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 112.7252 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 111.76 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 50ab7be7-14af-4108-9589-d5dbcaaab48b))
+    (pin "2" (uuid ddb8d707-2908-431f-9092-4e50f55ecd95))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C106") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C8") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C15") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -782,10 +1128,16 @@
           (reference "D15") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D22") (unit 1)
+          (reference "D108") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D8") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D7") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D21") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D35") (unit 1)
         )
       )
     )
@@ -816,10 +1168,50 @@
           (reference "D9") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D19") (unit 1)
+          (reference "D109") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D5") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D18") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D32") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 146.05 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 63007ffc-862d-4369-8280-ff3077527cc1)
+    (property "Reference" "#PWR017" (at 146.05 118.11 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 146.05 116.84 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 146.05 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 146.05 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ba52b0c7-0295-4d70-9e25-e37be19982e4))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR017") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR021") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR030") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -850,10 +1242,16 @@
           (reference "D6") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D16") (unit 1)
+          (reference "D112") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D2") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D1") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D15") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D29") (unit 1)
         )
       )
     )
@@ -884,10 +1282,16 @@
           (reference "D12") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D28") (unit 1)
+          (reference "D105") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D14") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D13") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D27") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D41") (unit 1)
         )
       )
     )
@@ -918,10 +1322,50 @@
           (reference "D7") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D17") (unit 1)
+          (reference "D111") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D3") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D2") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D16") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D30") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 110.49 128.27 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ac21694f-8a79-4e12-abee-1512a9105c17)
+    (property "Reference" "#PWR015" (at 110.49 134.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 110.49 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 110.49 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 110.49 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8f158288-242c-4283-abc8-e8f0b5d38e56))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR015") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR018") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR027") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -952,10 +1396,54 @@
           (reference "D10") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D21") (unit 1)
+          (reference "D113") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D7") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D6") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D20") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D34") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 146.05 107.95 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b4914aaf-c8f4-4546-8a32-6e42b932f7ee)
+    (property "Reference" "C4" (at 147.32 102.87 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 147.32 105.41 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 147.0152 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 146.05 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 30141a92-7273-4573-b7c7-27c6cbc44340))
+    (pin "2" (uuid e228427b-b5b6-4d7b-82f4-d994f1dbc6c0))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C107") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C9") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C16") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -986,10 +1474,16 @@
           (reference "D5") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D27") (unit 1)
+          (reference "D104") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D13") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D12") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D26") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D40") (unit 1)
         )
       )
     )
@@ -1020,10 +1514,54 @@
           (reference "D4") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D26") (unit 1)
+          (reference "D103") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D12") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D11") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D25") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D39") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 110.49 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c274a6a3-8322-43b9-aa4c-a5fe55de99bf)
+    (property "Reference" "C4" (at 111.76 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 111.76 121.92 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 111.4552 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 110.49 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c7949934-bb07-4689-955c-3341d177c67e))
+    (pin "2" (uuid 94662f7a-1a55-432e-b494-873ae08c4843))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C105") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C7") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C14") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -1054,10 +1592,16 @@
           (reference "D13") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D29") (unit 1)
+          (reference "D106") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D15") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D14") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D28") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D42") (unit 1)
         )
       )
     )
@@ -1088,10 +1632,164 @@
           (reference "D11") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D24") (unit 1)
+          (reference "D114") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D10") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D9") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D23") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D37") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 168.91 43.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid caaac2a0-df36-4624-8884-4544ef14cfb0)
+    (property "Reference" "C4" (at 170.18 38.1 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 170.18 40.64 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 169.8752 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 168.91 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e7530ffd-8687-4de2-8539-b9a334c01aed))
+    (pin "2" (uuid e3219e8d-acd2-41ac-b509-6c44737d5d8a))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C101") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C11") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C18") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C25") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 181.61 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d52d3e50-6351-4976-a8a0-90c65d0aef22)
+    (property "Reference" "C4" (at 182.88 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 182.88 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 182.5752 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 181.61 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d29cf85a-bdbd-4c86-ac30-95b0f2830a17))
+    (pin "2" (uuid 2acb602c-890e-4861-b447-9928bd75a2db))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C102") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C13") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C20") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C27") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 181.61 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e4a1b234-4f26-466a-a06c-6d591f07f8b9)
+    (property "Reference" "#PWR010" (at 181.61 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 181.61 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 181.61 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 181.61 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d43614f6-3117-4118-9ca5-c882ae0f9c36))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "#PWR010") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "#PWR026") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "#PWR035") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "#PWR044") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 163.83 148.59 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid eab4404d-ae46-4f04-82b1-e43de005ab7a)
+    (property "Reference" "C4" (at 165.1 143.51 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 165.1 146.05 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 164.7952 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 163.83 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 822d2d2b-f065-4e7d-b519-8fc7f9bf0202))
+    (pin "2" (uuid 6310230c-6596-460c-a7f2-df89a3cf184a))
+    (instances
+      (project "gaming-clock"
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925"
+          (reference "C4") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
+          (reference "C104") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "C10") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "C17") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -1122,10 +1820,16 @@
           (reference "D8") (unit 1)
         )
         (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/2b735b1b-03a0-49bb-ba12-06e62ad816af"
-          (reference "D18") (unit 1)
+          (reference "D110") (unit 1)
         )
-        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/f0ff7648-a9ea-4881-bd0f-58f85ee4658d"
-          (reference "D4") (unit 1)
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/ded261bb-371d-4f84-87b8-dbe03d3e43d6"
+          (reference "D3") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/28a171d3-1377-49c9-a6b0-a6483789992f"
+          (reference "D17") (unit 1)
+        )
+        (path "/51b06f68-d19f-435f-8d66-e0d8a7239925/c1a11834-aa1a-42bc-bc4e-c4324b41f202"
+          (reference "D31") (unit 1)
         )
       )
     )
