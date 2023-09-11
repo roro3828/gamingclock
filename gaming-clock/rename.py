@@ -2,7 +2,7 @@ import pcbnew
 import re
 
 def _get_selected_modules():
-    modules = pcbnew.GetBoard().GetModules()
+    modules = pcbnew.GetBoard().GetFootprints()
     return filter(lambda m: m.IsSelected(), modules)
 
 def _replace_leading_number(target, new):

@@ -48,23 +48,30 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [
+        "hole_clearance|154373000|96785800|929aa8d7-6607-4d85-8c57-94b3296ede51|8b769f85-48bb-42d8-9977-d98788d513e3",
+        "hole_clearance|154373000|96785800|929aa8d7-6607-4d85-8c57-94b3296ede51|ce0488fd-91a3-4bf1-8303-dfc963ea593a",
+        "hole_clearance|162373000|96785800|a6c1f6c2-26cd-4df4-88d4-8ddce4c0bcb9|0eb81433-e988-4d3c-88cd-8c5b7678a21f",
+        "hole_clearance|162373000|96785800|a6c1f6c2-26cd-4df4-88d4-8ddce4c0bcb9|ae71b528-de6a-4080-94bb-960c081a3ac4",
+        "lib_footprint_mismatch|178858215|104845000|17fba59d-0c6a-465d-bb76-3cd1d49f8ca5|00000000-0000-0000-0000-000000000000",
         "silk_edge_clearance|107696000|73025000|6aef8a67-85c2-413d-ac82-b3aa029e64d6|3dc3b245-003b-4717-94eb-7072b58bd10f",
         "silk_edge_clearance|107696000|73025000|6aef8a67-85c2-413d-ac82-b3aa029e64d6|c1fea1aa-1876-41d9-acf4-ead4b7e0c355",
         "silk_edge_clearance|110236000|73025000|6aef8a67-85c2-413d-ac82-b3aa029e64d6|1511bd3f-38ce-48b6-89cd-1c630c55a396",
         "silk_edge_clearance|110236000|73025000|6aef8a67-85c2-413d-ac82-b3aa029e64d6|5a0b95e8-0e92-4032-bf91-19c80e0db627",
         "silk_edge_clearance|267782000|70590237|42f847f9-2634-4b93-8531-224d15a16bee|449aee03-d0e5-4fec-a967-f9f7f465deeb",
+        "silk_overlap|168562000|88575506|86405ba0-7fb3-45e8-bdeb-04d72c9e9977|e0a6563c-7d13-43b5-bd1c-4f2159e8cb26",
         "silk_overlap|168562000|88575506|e0a6563c-7d13-43b5-bd1c-4f2159e8cb26|86405ba0-7fb3-45e8-bdeb-04d72c9e9977",
+        "solder_mask_bridge|154373000|96070800|929aa8d7-6607-4d85-8c57-94b3296ede51|8b769f85-48bb-42d8-9977-d98788d513e3",
+        "solder_mask_bridge|154373000|97500800|929aa8d7-6607-4d85-8c57-94b3296ede51|ce0488fd-91a3-4bf1-8303-dfc963ea593a",
         "starved_thermal|175641000|102462500|e68e36c3-b199-48df-abe9-c7854e595447|0374156e-44c6-4c85-9215-e86ada2f9cd2|F.Cu",
-        "starved_thermal|179604500|91948000|e68e36c3-b199-48df-abe9-c7854e595447|f05c8ea6-7e07-4f8e-a9fb-99518bc29d39|F.Cu",
-        "track_dangling|156907000|136844000|3ae83238-c563-43ec-9959-03b96927cd60|00000000-0000-0000-0000-000000000000",
-        "unconnected_items|150684500|133494113|ea2adbd3-406f-4f4c-9d4a-d58fb7f3e0f9|e68e36c3-b199-48df-abe9-c7854e595447",
-        "unconnected_items|155640000|97789500|85583e3d-f63e-438d-924c-7e238689f0d8|879dbe06-3228-4cf4-b7a7-a999627876c0",
-        "unconnected_items|155702000|133601500|879dbe06-3228-4cf4-b7a7-a999627876c0|7c2357d9-7e04-4eb9-b7c8-4591a1f47319",
-        "unconnected_items|157350000|97789500|0c6b23b2-fe06-4509-8526-afe1a5ecf53c|294c9f46-b169-4865-b747-78d469ae55af",
-        "unconnected_items|158874000|97789500|7d8c61f3-53a6-4b16-bffa-667af89e8aa2|0328e993-dac9-4032-a6ec-ee1ff09c8852",
-        "unconnected_items|160890625|137103047|de41391b-457d-46b6-be01-009f8cd21054|de41391b-457d-46b6-be01-009f8cd21054"
+        "starved_thermal|179604500|91948000|e68e36c3-b199-48df-abe9-c7854e595447|f05c8ea6-7e07-4f8e-a9fb-99518bc29d39|F.Cu"
       ],
       "meta": {
         "version": 2
@@ -181,8 +188,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -429,6 +443,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+5V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -489,20 +520,20 @@
       ""
     ],
     [
-      "2b735b1b-03a0-49bb-ba12-06e62ad816af",
-      "7-Segment-ARGB"
+      "94b2f381-03c5-4122-9a71-230234e15d03",
+      "7-Segment-ARGB2"
     ],
     [
       "abf056cf-36de-46c8-825f-5fa35d292f99",
       "7-Segment-ARGB1"
     ],
     [
-      "90f9ec90-4a09-4c36-9ec3-c76b8c4fed8b",
-      "7-Segment-ARGB2"
+      "7bc2e089-ac47-45a8-b545-f30af39e7798",
+      "7-Segment-ARGB3"
     ],
     [
-      "a46ad0f6-0204-480c-b286-792a50922da8",
-      "7-Segment-ARGB3"
+      "0d2bfe89-bad0-46b4-b4a9-4dbe6bcffce5",
+      "7-Segment-ARGB4"
     ]
   ],
   "text_variables": {}
